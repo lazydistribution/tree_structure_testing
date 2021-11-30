@@ -1,18 +1,18 @@
 # tree_structure_testing
 
-## Installing: navigate to project root folder and
-
+## Installing
+navigate to project root folder and
 ```
 composer init
 ```
 
-## Web url should be directed to public folder index.php-file
-
+## base url
+should be directed to public folder
 ```
 ../public/index.php
 ``` 
 
-## Routes understands this:
+## Routes
 routes can be set in ../public/index.php file and there in routes section.
 
 

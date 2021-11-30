@@ -1,7 +1,7 @@
 # tree_structure_testing
 
 ## Installing
-navigate to project root folder and
+Download project and navigate to project root folder and
 ```
 composer init
 ```

@@ -30,6 +30,9 @@ in current verion there aren't any wildcards.
 
 #### second parameter 
 this is where you spesify the controller and the method to call in that controller
+```
+controller@method
+```
 
 ## controller service and model
 In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from app folder in corresponding folders.

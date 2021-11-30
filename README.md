@@ -93,8 +93,10 @@ class ClassNameModel extends Model
 ##### Base class Service for class ClassNameService loads corresponding Model in class member $this->ClassName
 
 ##### Controller name should be same as database table name with *s* 
-Controller: **ClassName** -> database table: **classnames**
+Controller: **ClassName** -> database table: **classnames**. 
+
+##### Database
+database structure can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
 
 ## About
-- Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
-- This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.
+This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.

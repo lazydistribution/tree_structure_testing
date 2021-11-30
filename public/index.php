@@ -6,6 +6,7 @@
 
 include_once(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'autoloader.php');
 
+TimerFeature::php();
 /**************************************/
 /**************  HELPERS  *************/
 /**************************************/
@@ -16,7 +17,7 @@ Functions::init();
 /**************************************/
 
 Config::init();
-Config::$start_time = microtime(true);
+//Config::$start_time = microtime(true);
 
 /**************************************/
 /**************  ROUTES  **************/

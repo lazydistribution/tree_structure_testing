@@ -1,7 +1,9 @@
 # tree_structure_testing
 
 ## Installing
-Download project and navigate to project root folder and
+Download project 
+
+If you want to use [fzaninotto/Faker](https://github.com/fzaninotto/Faker) type in console:
 ```
 composer init
 ```

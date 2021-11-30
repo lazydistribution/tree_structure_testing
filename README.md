@@ -112,7 +112,7 @@ class ClassNameModel extends Model
 Controller: **ClassName** -> database table: **classnames**. 
 
 ## Database
-database structure can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
+database structure for current setup can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
 
 ## Shells
 crontab runs etc can be run with from Console folder sucha as

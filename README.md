@@ -59,10 +59,21 @@ If route has no **api/** prefix controller should return a view
 return HTML::view('index.index', [ 'base_url' => base_url() ]);
 ```
 ## Views
-Views are located in app/View folder. Referring a view file uses a dot notation. For instance above, viev.php file path is 
+Views are located in app/View folder. 
+##### view usage
+Referring a view file uses a dot notation and views should be php files. 
+
+##### First parameter should be vief file path:
+```
+HTML::view('index.index', [ 'base_url' => base_url() ])
+```
+For instance above **index.index**, file path is:
 ```
 ../app/View/view/index.php
 ```
+##### second parameter
+seconf parameter should be an associative array where key is name of a php variable in view file and value its corresponding value.
+
 ## Controller, Service and Model
 In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from **app** folder in corresponding folders.
 Naming convention for controllers is **ClassNameController**. Naming convention for services is **ClassNameService**, Naming convention for Models is **ClassNameModel**.

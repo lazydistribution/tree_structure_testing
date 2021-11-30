@@ -1,12 +1,14 @@
 # tree_structure_testing
 
 ## Installing
-Download project 
+Just download the project and you are ready to go 
 
 If you want to use [fzaninotto/Faker](https://github.com/fzaninotto/Faker) type in console:
 ```
 composer init
 ```
+If you want to use build in shell project you need that God damn faker.
+
 
 ## base url
 should be directed to public folder
@@ -133,6 +135,8 @@ class CustomShell extends Shell
     }
 }
 ```
+## custom files and folders
+autoloader.php file in root folder loads classess in folders in app folder where filename is same as class name. Autoload for vendor files can be found vendor folder if ypoiu have installed any third paret libraries. Then autoloader.php should be able to load that autoloder also. third part libaries aren mandatory for basic use but if you need build in shell project RandomTree then you need to **composer init** to get [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
 
 ## About
 This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.

@@ -33,9 +33,7 @@ this is where you spesify the controller and the method to call in that controll
 
 ## controller service and model
 In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from app folder in corresponding folders.
-Naming convention for controllers is **ClassNameController**
-Naming convention for services is **ClassNameService**
-Naming convention for Models is **ClassNameModel**
+Naming convention for controllers is **ClassNameController**. Naming convention for services is **ClassNameService**, Naming convention for Models is **ClassNameModel**.
 
 ## important files
 ClassNameController-contoller should extend Controller

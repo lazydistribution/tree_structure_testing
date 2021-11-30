@@ -28,15 +28,15 @@ function init() {
 }
 
 function displayTrees(trees) {
-    let html = '<ul>';
+    let html = '';
     //html = displayTree([trees[0]]);
     let index = 0;
     for(let tree of trees) {
-        html += '<li class="topic">'
+        html += '<ul class="topic">'
         html += displayTree([tree]);
-        html += '</li>'
+        html += '</ul>'
     }
-    html += '</ul>'
+    html += ''
     document.querySelector('#app').innerHTML += html;
 
     endTime = getTime();
@@ -60,7 +60,7 @@ function displayTree(tree) {
         if(data.children && data.children.length > 0) {
             children = '<ul>' + displayTree(data.children) + '</ul>';
         }
-        html += '<div><b>' + data.id + '</b> ' + data.headline_text + '</div>' + children;
+        html += '<li><div><b>' + data.id + '</b> ' + data.headline_text + '</div>' + children + '</li>';
     }
     return html;
 }

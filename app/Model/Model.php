@@ -34,21 +34,22 @@ class Model
     public function all() {
         $conn = Connection::get();
         
-        $start_sql_time = microtime(true);
+        TimerFeature::sql();
         
         $sql = "SELECT * FROM {$this->table_name}";
         $res = $conn->query($sql, PDO::FETCH_ASSOC);
         
-        $end_sql_time = microtime(true);
-        
+        TimerFeature::sql();
+
         $results = [];
         $index = 0;
         foreach($res as $row) {
 			$results[] = $row;
             $index++;
 		}
-        $output = ['rows' => $index, 'sql_time' => ($end_sql_time - $start_sql_time), 'response' => $results];
-        return new Collection($output);
+        TimerFeature::rows($index);
+        
+        return new Collection($results);
     }
 
     public static function init($model_name) {

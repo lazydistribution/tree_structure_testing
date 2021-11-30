@@ -4,18 +4,13 @@
 class PostService extends Service 
 {
     public function index() {
-        //$this->loadModel('User');
 
         $posts = $this->Post->all();
-        $content = new Collection($posts->fields(['fields' => 'response']));
         
-        $sql_time = $posts->fields(['fields' => 'sql_time']);
-        $rows = $posts->fields(['fields' => 'rows']);
         $output = [];
         $topic_id = null;
         $index = -1;
-        foreach(current($content->data()) as $key => $row) {
-            //tapa($row);
+        foreach($posts->data() as $key => $row) {
             if($topic_id != $row['topic_id']) {
                 $topic_id = $row['topic_id'];
                 $output[] = [];
@@ -28,7 +23,6 @@ class PostService extends Service
             $tmp['body_text'] = '<article class="message">' . BBCode::decode($tmp['body_text']) . '</article>';
             $output[$index][] = $tmp;
         }
-        //tapa($output);
-        return array_merge($sql_time, $rows, ['response' => $output]);
+        return $output;
     }
 }

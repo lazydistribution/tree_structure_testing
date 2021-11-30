@@ -10,13 +10,13 @@ composer init
 
 ```
 ../public/index.php
-```
-
-## routes can be set in ../public/index.php file and there in routes section. 
+``` 
 
 ## Routes understands this:
+routes can be set in ../public/index.php file and there in routes section.
 
-#### first parameter
+
+##### First parameter
 if web url is ...index.php?route=index, this route will recognize it:
 ```
 Routes::get('index', 'LandingPageController@index');
@@ -28,13 +28,13 @@ Routes::get('api/index', 'PostController@index');
 
 There is only **get** routes implemented, but post requests can be send to get endpoints also because this uses just url guery params as route information. In current verion there aren't any wildcards.
 
-#### second parameter 
+##### Second parameter 
 this is where you spesify the controller and the method to call in that controller
 ```
 controller@method
 ```
 
-Method takes $request as a parameter
+##### Method takes $request as a parameter
 ```
 public function method($request) {}
 ```

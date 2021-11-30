@@ -10,7 +10,7 @@ composer init
 If you want to use build in shell project you need that God damn faker.
 
 
-## base url
+## Base url
 should be directed to public folder
 ```
 ../public/index.php
@@ -76,14 +76,14 @@ For instance above **index.index**, file path is:
 ```
 ../app/View/view/index.php
 ```
-##### second parameter
+##### Second parameter
 seconf parameter should be an associative array where key is name of a php variable in view file and value its corresponding value.
 
 ## Controller, Service and Model
 In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from **app** folder in corresponding folders.
 Naming convention for controllers is **ClassNameController**. Naming convention for services is **ClassNameService**, Naming convention for Models is **ClassNameModel**.
 
-## important files
+## Important files
 ClassNameController-contoller should extend Controller
 ```
 class ClassNameController extends Controller 
@@ -135,7 +135,7 @@ class CustomShell extends Shell
     }
 }
 ```
-## custom files and folders
+## Custom files and folders
 autoloader.php file in root folder loads classess in folders in app folder where filename is same as class name. Autoload for vendor files can be found vendor folder if ypoiu have installed any third paret libraries. Then autoloader.php should be able to load that autoloder also. third part libaries aren mandatory for basic use but if you need build in shell project RandomTree then you need to **composer init** to get [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
 
 ## About

@@ -141,13 +141,13 @@ crontab runs etc. can be run with from Console folder such as
 ```
 ../app/Console> php shell CustomShell <argv>
 ```
-where CustomShell should extend Console base class
+where CustomShell should extend Shell base class (it implementation is in the Shell-file without .php extension)
 ```
 class CustomShell extends Shell
 {
 }
 ```
-Custom Sehe lsould implement main method that takes args array as its parameter. $args contains parameters given in console line after custom shell name.
+CustomShell sould implement main method that takes args array as its parameter. $args contains parameters given in console line after custom shell name.
 ```
 class CustomShell extends Shell
 {

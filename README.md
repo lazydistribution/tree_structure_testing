@@ -40,7 +40,12 @@ controllerName@methodName
 
 ##### Method takes $request as a parameter
 ```
-public function methodName($request) {}
+class ControllerName extends Controller
+{
+    public function methodName($request)
+    {
+    }
+}
 ```
 ## Request 
 ##### $request variable content in Controller

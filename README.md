@@ -114,7 +114,7 @@ Controller: **ClassName** -> database table: **classnames**.
 ## Database
 database structure can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
 
-## Console
+## Shells
 crontab runs etc can be run with from Console folder sucha as
 ```
 ../app/Console> php shell CustomShell <argv>
@@ -136,7 +136,7 @@ class CustomShell extends Shell
 }
 ```
 ## Custom files and folders
-autoloader.php file in root folder loads classess in folders in app folder where filename is same as class name. Autoload for vendor files can be found vendor folder if ypoiu have installed any third paret libraries. Then autoloader.php should be able to load that autoloder also. third part libaries aren mandatory for basic use but if you need build in shell project RandomTree then you need to **composer init** to get [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
+**autoloader.php** file in root folder loads classess in folders in **app** folder where file name is same as class name. Autoload for vendor files can be found **vendor** folder if you have installed any third paret libraries. If not you don't need it. If yoou have installed third part libraries autoloader.php should be able to load vendor autoload.php-file also. Third part libaries aren't mandatory for basic usege but if you need to use build in shell project **RandomTree** then you need to **composer init** to get [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
 
 ## About
 This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.

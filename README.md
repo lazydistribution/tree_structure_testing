@@ -16,7 +16,7 @@ composer init
 
 ## Routes understands this:
 
-## first parameter
+#### first parameter
 if web url is ...index.php?route=index, this route will recognize it:
 ```
 Routes::get('index', 'LandingPageController@index');
@@ -28,7 +28,7 @@ Routes::get('api/index', 'PostController@index');
 
 in current verion there aren't any wildcards.
 
-## second parameter 
+#### second parameter 
 this is where you spesify the controller and the method to call in that controller
 
 ## controller service and model

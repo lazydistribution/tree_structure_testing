@@ -115,7 +115,7 @@ Controller: **ClassName** -> database table: **classnames**.
 database structure for current setup can be found from **posts_table.sql** file. Model base class should use database byt basically it just gets all rows from corresponding table now. And there is Collection class in this context that needs to be developed to help usages of arrays.
 
 ## Shells
-crontab runs etc can be run with from Console folder sucha as
+crontab runs etc. can be run with from Console folder such as
 ```
 ../app/Console> php shell CustomShell <argv>
 ```

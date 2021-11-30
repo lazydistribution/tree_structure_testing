@@ -21,7 +21,7 @@ class Response {
             'rows' => TimerFeature::getRows(),
         ];
 
-        $msg = array_merge($timer_arr, ['response' => $msg]);
+        $msg = ['timer' => $timer_arr, 'response' => $msg];
         
         header("{$header_prefix} Content-Type: application/json; charset=utf-8");
         echo json_encode($msg);

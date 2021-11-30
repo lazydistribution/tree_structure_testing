@@ -1,9 +1,12 @@
 # tree_structure_testing
 
 ## Table of contents
-- [Installing](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing))
-- [Base url](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing))
-- 
+- [Installing](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing)
+- [Base url](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#base-url)
+- [Routes](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#routes)
+ - [First parameter](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#first-parameter)
+ - [Second parameter](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#second-parameter)
+
 ## Installing
 Just download the project and you are ready to go 
 

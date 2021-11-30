@@ -24,6 +24,8 @@ composer init
 ```
 If you want to use build in shell project RandomTreeShell you need that God damn faker.
 
+#### database settings
+Database settings should be put in file **.../app/Bootstrap/Connection.php**
 
 ## Base url
 should be directed to public folder index.php file

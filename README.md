@@ -134,3 +134,6 @@ class CustomShell extends Shell
 
 ## About
 This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.
+
+## License
+At the moment you this can be use anyway you like.

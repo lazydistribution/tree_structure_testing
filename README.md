@@ -4,8 +4,8 @@
 - [Installing](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing)
 - [Base url](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#base-url)
 - [Routes](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#routes)
- - [First parameter](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#first-parameter)
- - [Second parameter](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#second-parameter)
+- [Request](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#request)
+- [Views](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#views)
 
 ## Installing
 Just download the project and you are ready to go 
@@ -59,7 +59,7 @@ class ControllerName extends Controller
 $_GET array content
 ```
 $request->input():array
-$request->input($key):string|''
+$request->input($key):string
 ```
 $_POST array content
 ```

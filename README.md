@@ -112,7 +112,7 @@ database structure can be found from posts_table.sql file. Model base class uses
 ## Console
 crontab runs etc can be run with from Console folder sucha as
 ```
-../app/Console> php shell CustomShell
+../app/Console> php shell CustomShell <argv>
 ```
 where CustomShell should extend Console base class
 ```
@@ -120,7 +120,7 @@ class CustomShell extends Shell
 {
 }
 ```
-Custom Sehe lsould implement main method that takes args attay as its parameter
+Custom Sehe lsould implement main method that takes args array as its parameter. $args contains parameters given in console line after custom shell name.
 ```
 class CustomShell extends Shell
 {

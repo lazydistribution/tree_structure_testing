@@ -98,5 +98,21 @@ Controller: **ClassName** -> database table: **classnames**.
 ## Database
 database structure can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
 
+## Console
+crontab runs etc can be run with from Console folder sucha as
+```
+../app/Console> php shell CustomShell
+```
+where CustomShell should extend Console base class
+```
+class CustomShell extends Shell
+```
+Custom Sehe lsould implement main method that takes args attay as its parameter
+```
+public function main($args) {
+    ...
+}
+```
+
 ## About
 This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.

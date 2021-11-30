@@ -38,7 +38,8 @@ controller@method
 ```
 public function method($request) {}
 ```
-## $request variable content:
+## Request 
+##### $request variable content:
 $_GET array content
 ```
 $request->input():array

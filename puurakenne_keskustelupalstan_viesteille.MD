@@ -8,7 +8,7 @@ Javascript toteutus tiedostossa
 ```
 HTML-toteutus tiedostossa
 ```
-.../public/app/Views/index/index.php
+.../app/Views/index/index.php
 ```
 
 PHP:ssa toteutusjärjestys

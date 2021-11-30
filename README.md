@@ -18,12 +18,15 @@ composer init
 
 ## first parameter
 if web url is ...index.php?route=index, this route will recognize it:
+```
 Routes::get('index', 'LandingPageController@index');
-
+```
 if web url is ...index.php?route=api/index, this route will recognize it:
+```
 Routes::get('api/index', 'PostController@index');
+```
 
-in current verion there are no any wildcards.
+in current verion there aren't any wildcards.
 
 ## second parameter 
 this is where you spesify the controller and the method to call in that controller
@@ -56,8 +59,8 @@ class ClassNameModel extends Model
 }
 ```
 
-Base class Controller for class ClassNameController loads corresponding Service in class member $this->Service
-Base class Service for class ClassNameService loads corresponding Model in class member $this->ClassName
+##### Base class Controller for class ClassNameController loads corresponding Service in class member $this->Service
+##### Base class Service for class ClassNameService loads corresponding Model in class member $this->ClassName
 
 ##### Controller name should be same as database table name with *s* 
 Controller: **ClassName** -> database table: **classnames**

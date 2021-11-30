@@ -3,7 +3,7 @@
 ## Installing: navigate to project root folder and
 
 ```
-compose init
+composer init
 ```
 
 ## Web url should be directed to public folder index.php-file

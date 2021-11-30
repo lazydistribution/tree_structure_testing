@@ -89,13 +89,13 @@ class ClassNameModel extends Model
 }
 ```
 
-##### Base class Controller for class ClassNameController loads corresponding Service in class member $this->Service
-##### Base class Service for class ClassNameService loads corresponding Model in class member $this->ClassName
+- Base class Controller for class ClassNameController loads corresponding Service in class member $this->Service
+- Base class Service for class ClassNameService loads corresponding Model in class member $this->ClassName
 
 ##### Controller name should be same as database table name with *s* 
 Controller: **ClassName** -> database table: **classnames**. 
 
-##### Database
+## Database
 database structure can be found from posts_table.sql file. Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
 
 ## About

@@ -16,9 +16,9 @@ function init() {
     startTime = getTime();
     const success = data => {
         console.log(data);
-        tot_back = data.php_tot;
-        tot_sql = data.sql_tot;
-        tot_rows = data.rows;
+        tot_back = data.timer.php_tot;
+        tot_sql = data.timer.sql_tot;
+        tot_rows = data.timer.rows;
 
         const trees = treeSort(data.response);
         //console.log(trees);

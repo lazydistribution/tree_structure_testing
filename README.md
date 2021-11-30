@@ -1,5 +1,9 @@
 # tree_structure_testing
 
+## Table of contents
+- [Installing](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing))
+- [Base url](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#installing))
+- 
 ## Installing
 Just download the project and you are ready to go 
 

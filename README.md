@@ -35,12 +35,12 @@ There is only **get** routes implemented, but post requests can be send to get e
 ##### Second parameter 
 this is where you spesify the controller and the method to call in that controller
 ```
-controller@method
+controllerName@methodName
 ```
 
 ##### Method takes $request as a parameter
 ```
-public function method($request) {}
+public function methodName($request) {}
 ```
 ## Request 
 ##### $request variable content in Controller

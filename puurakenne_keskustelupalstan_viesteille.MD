@@ -13,5 +13,5 @@ HTML-toteutus tiedostossa
 
 PHP:ssa toteutusjärjestys
 ```
-index.php -> PostController@index -> PostService@index -> Model@all -> PostService@index -> Response@json
+.../public/index.php -> .../app/Controllers/PostController@index -> .../app/Services/PostService@index -> .../app/Model/Model@all -> PostService@index -> PostController@index -> .../app/Bootstrap/Response@json
 ```

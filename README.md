@@ -6,6 +6,14 @@
 - [Routes](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#routes)
 - [Request](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#request)
 - [Views](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#views)
+- [Controller, Service and Model](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#controller-service-and-model)
+- [Important files](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#important-files)
+- [Database](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#database)
+- [Shells](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#shells)
+- [Important files](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#important-files)
+- [Custom files and folders](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#custom_files_and_folders)
+- - [Custom files and folders](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#custom_files_and_folders)
+- - [Custom files and folders](https://github.com/lazydistribution/tree_structure_testing/blob/main/README.md#custom_files_and_folders)
 
 ## Installing
 Just download the project and you are ready to go 

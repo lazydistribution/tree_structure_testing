@@ -15,10 +15,11 @@ function init() {
     const url = base_url + '?route=api/index';
     startTime = getTime();
     const success = data => {
-        //console.log(data);
-        tot_back = data.total;
-        tot_sql = data.sql_time;
+        console.log(data);
+        tot_back = data.php_tot;
+        tot_sql = data.sql_tot;
         tot_rows = data.rows;
+
         const trees = treeSort(data.response);
         //console.log(trees);
         displayTrees(trees);
@@ -40,7 +41,6 @@ function displayTrees(trees) {
     document.querySelector('#app').innerHTML += html;
 
     endTime = getTime();
-    console.log(endTime - startTime);
     let start = '<tr><td>';
     let middle = '</td><td>';
     let end = '</td></tr>';

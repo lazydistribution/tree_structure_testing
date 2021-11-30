@@ -141,7 +141,7 @@ crontab runs etc. can be run with from Console folder such as
 ```
 ../app/Console> php shell CustomShell <argv>
 ```
-where CustomShell should extend Shell base class (it implementation is in the Shell-file without .php extension)
+where CustomShell should extend Shell base class (its implementation is in the Shell-file without .php extension)
 ```
 class CustomShell extends Shell
 {

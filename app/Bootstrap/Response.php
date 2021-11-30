@@ -12,12 +12,17 @@ class Response {
             case 404: $header_prefix = "HTTP/1.1 404 Not Found;"; break;
             case 200: default: $header_prefix = "HTTP/1.1 200 OK;"; break;
         }
-        Config::$end_time = microtime(true);
+
+        TimerFeature::php();
         
-        $times = [
-            'total' => Config::$end_time - Config::$start_time,
+        $timer_arr = [
+            'php_tot' => TimerFeature::phpTot(),
+            'sql_tot' => TimerFeature::sqlTot(),
+            'rows' => TimerFeature::getRows(),
         ];
-        $msg = array_merge($times, $msg);
+
+        $msg = array_merge($timer_arr, ['response' => $msg]);
+        
         header("{$header_prefix} Content-Type: application/json; charset=utf-8");
         echo json_encode($msg);
     }

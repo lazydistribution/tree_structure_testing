@@ -117,11 +117,17 @@ crontab runs etc can be run with from Console folder sucha as
 where CustomShell should extend Console base class
 ```
 class CustomShell extends Shell
+{
+}
 ```
 Custom Sehe lsould implement main method that takes args attay as its parameter
 ```
-public function main($args) {
-    ...
+class CustomShell extends Shell
+{
+    public function main($args)
+    {
+        ...
+    }
 }
 ```
 

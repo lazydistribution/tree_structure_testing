@@ -38,7 +38,17 @@ Method takes $request as a parameter
 ```
 public function method($request) {}
 ```
-
+## $request variable content:
+$_GET array content
+```
+$request->input():array
+$request->input($key):string|''
+```
+$_POST array content
+```
+$request->post():array
+$request->post($key):string|''
+```
 ## controller service and model
 In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from app folder in corresponding folders.
 Naming convention for controllers is **ClassNameController**. Naming convention for services is **ClassNameService**, Naming convention for Models is **ClassNameModel**.

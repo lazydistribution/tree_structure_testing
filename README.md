@@ -139,7 +139,7 @@ class CustomShell extends Shell
 **autoloader.php** file in root folder loads classess in folders in **app** folder where file name is same as class name. Autoload for vendor files can be found **vendor** folder if you have installed any third paret libraries. If not you don't need it. If yoou have installed third part libraries autoloader.php should be able to load vendor autoload.php-file also. Third part libaries aren't mandatory for basic usege but if you need to use build in shell project **RandomTree** then you need to **composer init** to get [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
 
 ## About
-This is inspirated by Laravel MVC. This is strongly limitedt ..in progress.. project in usecases in my own projects when I need siple ajax api for testing my own javascript projects.
+This is inspirated by Laravel MVC. This is strongly limitedt ..in progress.. project for usecases in my own projects when I need simple ajax api for testing my own javascript projects without too heavy setting process.
 
 ## License
 At the moment you this can be use anyway you like.

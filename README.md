@@ -49,8 +49,22 @@ $_POST array content
 $request->post():array
 $request->post($key):string|''
 ```
-## controller service and model
-In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from app folder in corresponding folders.
+## Response
+If route has an **api/** prefix controller should return an array with two parameters msg parameter has payload and second is status
+```
+return ['msg' => $request->input('route'), 'status' => 200];
+```
+If route has no **api/** prefix controller should return a view
+```
+return HTML::view('index.index', [ 'base_url' => base_url() ]);
+```
+## Views
+Views are located in app/View folder. Referring a view file uses a dot notation. For instance above, viev.php file path is 
+```
+../app/View/view/index.php
+```
+## Controller, Service and Model
+In this implemention Controller uses Services and Service uses Models. Controllers, services and models can be found from **app** folder in corresponding folders.
 Naming convention for controllers is **ClassNameController**. Naming convention for services is **ClassNameService**, Naming convention for Models is **ClassNameModel**.
 
 ## important files
@@ -81,8 +95,6 @@ class ClassNameModel extends Model
 ##### Controller name should be same as database table name with *s* 
 Controller: **ClassName** -> database table: **classnames**
 
-## Important notes
-Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
-
 ## About
-This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.
+- Model base class uses database and has no usecases at all. Basically it gets all roes from  corresponding table. and there is Collection class that needs to be developed to help usages of arrays. There are no middlewarews or any authentication logig.
+- This is inspirated by Laravel MVC. This is just a test version that is wery limitedt in usecases in my own projects when ajax api is needed and don't want to go trought a heavy setup process.

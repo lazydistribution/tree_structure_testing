@@ -147,4 +147,4 @@ class CustomShell extends Shell
 This is inspirated by Laravel MVC. This is strongly limitedt ..in progress.. project for usecases in my own projects when I need simple ajax api for testing my own javascript projects without too heavy setting process. There are no middlewarews or any authentication logic in current setup.
 
 ## License
-At the moment this can be used anyway you like.
+At the moment this can be used anyway you like except fot Faker. For usage of Faker you need to look its licensing policy in [fzaninotto/Faker](https://github.com/fzaninotto/Faker).

@@ -11,7 +11,7 @@ If you want to use build in shell project you need that God damn faker.
 
 
 ## Base url
-should be directed to public folder
+should be directed to public folder index.php file
 ```
 ../public/index.php
 ``` 
